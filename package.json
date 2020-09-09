@@ -1,0 +1,16 @@
+{
+  "name": "node-js-memescrapper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/paulschnetzer/node-js-memescrapper",
+  "author": "Paul Schnetzer <1998sheldon@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "got": "^11.6.1",
+    "node-image-downloader": "^1.0.7",
+    "request-promise": "^4.2.6",
+    "require": "^2.4.20"
+  }
+}
