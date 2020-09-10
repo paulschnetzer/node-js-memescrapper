@@ -11,6 +11,7 @@ fs.mkdir('./memes', function (err) {
     console.log('New directory successfully created.');
   }
 });
+
 (async () => {
   const memeURL = 'https://memegen.link/examples';
 
@@ -30,7 +31,6 @@ fs.mkdir('./memes', function (err) {
     memeURLArray.push('https://api.memegen.link/images' + name);
   }
 
-  console.log(memeURLArray);
   for (let i = 0; i < 11; i++) {
     const options = {
       url: memeURLArray[i],
