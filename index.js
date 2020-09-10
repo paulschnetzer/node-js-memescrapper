@@ -19,10 +19,8 @@ fs.mkdir('./memes', function (err) {
 
   const $ = cheerio.load(response);
   let memeURLArray = [];
-  memeURLArray.push(
-    'https://api.memegen.link/images/bender/your_text/goes_here.jpg?preview=true&watermark=none',
-  );
-  for (let i = 1; i < 10; i++) {
+
+  for (let i = 1; i < 11; i++) {
     let name = $(
       'body > div.meme-templates > div.row > div:nth-child(' +
         i +
@@ -31,7 +29,7 @@ fs.mkdir('./memes', function (err) {
     memeURLArray.push('https://api.memegen.link/images' + name);
   }
 
-  for (let i = 0; i < 11; i++) {
+  for (let i = 0; i < 10; i++) {
     const options = {
       url: memeURLArray[i],
       dest: './memes/image' + i + '.png', // will be saved to /path/to/dest/image.jpg
