@@ -1,5 +1,5 @@
 {
-  "name": "node-js-memescrapper",
+  "name": "node-memescraper",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/paulschnetzer/node-js-memescrapper",
@@ -9,10 +9,12 @@
     "axios": "^0.20.0",
     "cheerio": "^1.0.0-rc.3",
     "express": "^4.17.1",
+    "fs": "^0.0.1-security",
     "got": "^11.6.1",
     "image-downloader": "^4.0.1",
     "image-scraper": "^0.2.1",
     "node-image-downloader": "^1.0.7",
+    "readline": "^1.3.0",
     "request-promise": "^4.2.6",
     "require": "^2.4.20"
   }

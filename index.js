@@ -6,7 +6,7 @@ const fs = require('fs');
 
 fs.mkdir('./memes', function (err) {
   if (err) {
-    console.log('the folder already exitst');
+    console.log('the folder already exists');
   } else {
     console.log('New directory successfully created.');
   }
@@ -18,14 +18,10 @@ fs.mkdir('./memes', function (err) {
   const response = await request(memeURL);
 
   const $ = cheerio.load(response);
-  let memeURLArray = [];
+  const memeURLArray = [];
 
   for (let i = 1; i < 11; i++) {
-    let name = $(
-      'body > div.meme-templates > div.row > div:nth-child(' +
-        i +
-        ') > a > img',
-    ).attr('src');
+    const name = $('div:nth-child(' + i + ') > a > img').attr('src');
     memeURLArray.push('https://api.memegen.link/images' + name);
   }
 
