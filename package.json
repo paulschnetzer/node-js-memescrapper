@@ -2,7 +2,7 @@
   "name": "node-memescraper",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/paulschnetzer/node-js-memescrapper",
+  "repository": "https://github.com/paulschnetzer/node-js-memescraper",
   "author": "Paul Schnetzer <1998sheldon@gmail.com>",
   "license": "MIT",
   "dependencies": {
